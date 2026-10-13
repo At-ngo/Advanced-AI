@@ -1,0 +1,5 @@
+﻿maze,path length,# of nodes expanded
+small,19,90
+large,210,618
+open,54,679
+empty,14,92

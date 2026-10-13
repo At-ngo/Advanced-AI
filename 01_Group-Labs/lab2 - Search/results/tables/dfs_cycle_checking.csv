@@ -1,0 +1,13 @@
+﻿maze,cycle check,kết quả,path cost,# nodes expanded,# lần mở rộng lặp trạng thái,max frontier size,time (ms)
+open,1: chỉ kiểm tra đường đi,N/A*,N/A*,500000,499404,511,11768.6
+open,2: đường đi + không thêm trạng thái đã có trong frontier,ok,292,293,0,234,13.2
+open,3: đường đi + đưa trạng thái trùng lên đỉnh stack,ok,490,671,0,36,15.5
+loops,1: chỉ kiểm tra đường đi,ok,41,54,0,17,0.4
+loops,2: đường đi + không thêm trạng thái đã có trong frontier,ok,37,48,0,12,0.3
+loops,3: đường đi + đưa trạng thái trùng lên đỉnh stack,ok,41,54,0,11,0.3
+empty,1: chỉ kiểm tra đường đi,ok,16,16,0,25,0.2
+empty,2: đường đi + không thêm trạng thái đã có trong frontier,ok,16,16,0,24,0.1
+empty,3: đường đi + đưa trạng thái trùng lên đỉnh stack,ok,16,16,0,24,0.1
+empty_2,1: chỉ kiểm tra đường đi,ok,80,80,0,73,0.6
+empty_2,2: đường đi + không thêm trạng thái đã có trong frontier,ok,54,70,7,37,0.5
+empty_2,3: đường đi + đưa trạng thái trùng lên đỉnh stack,ok,80,80,0,12,0.7

@@ -1,0 +1,72 @@
+**small maze**
+
+| algorithm | path cost | # nodes expanded | max tree depth | max # nodes in memory | max frontier size | time (ms) |
+|---|---|---|---|---|---|---|
+| BFS | 19 | 90 | 19 | 93 | 9 | 0.27 |
+| DFS | 37 | 68 | 37 | 40 | 5 | 0.3 |
+| GBFS | 29 | 39 | 29 | 44 | 5 | 0.16 |
+| A* | 19 | 51 | 19 | 58 | 7 | 0.21 |
+
+**medium maze**
+
+| algorithm | path cost | # nodes expanded | max tree depth | max # nodes in memory | max frontier size | time (ms) |
+|---|---|---|---|---|---|---|
+| BFS | 68 | 267 | 68 | 270 | 9 | 0.81 |
+| DFS | 244 | 262 | 244 | 256 | 13 | 1.98 |
+| GBFS | 152 | 155 | 152 | 163 | 8 | 0.6 |
+| A* | 68 | 217 | 68 | 224 | 8 | 0.86 |
+
+**large maze**
+
+| algorithm | path cost | # nodes expanded | max tree depth | max # nodes in memory | max frontier size | time (ms) |
+|---|---|---|---|---|---|---|
+| BFS | 210 | 618 | 210 | 622 | 8 | 1.92 |
+| DFS | 210 | 519 | 223 | 255 | 34 | 3.9 |
+| GBFS | 210 | 456 | 210 | 481 | 25 | 1.84 |
+| A* | 210 | 542 | 210 | 553 | 12 | 2.2 |
+
+**open maze**
+
+| algorithm | path cost | # nodes expanded | max tree depth | max # nodes in memory | max frontier size | time (ms) |
+|---|---|---|---|---|---|---|
+| BFS | 54 | 679 | 54 | 683 | 25 | 2.64 |
+| DFS | 292 | 293 | 292 | 526 | 234 | 4.67 |
+| GBFS | 54 | 772 | 57 | 275 | 64 | 3.88 |
+| A* | 54 | 211 | 54 | 275 | 64 | 1.19 |
+
+**L maze**
+
+| algorithm | path cost | # nodes expanded | max tree depth | max # nodes in memory | max frontier size | time (ms) |
+|---|---|---|---|---|---|---|
+| BFS | 16 | 146 | 16 | 152 | 17 | 0.54 |
+| DFS | 24 | 24 | 24 | 53 | 29 | 0.13 |
+| GBFS | 16 | 42 | 16 | 64 | 31 | 0.22 |
+| A* | 16 | 40 | 16 | 69 | 29 | 0.22 |
+
+**loops maze**
+
+| algorithm | path cost | # nodes expanded | max tree depth | max # nodes in memory | max frontier size | time (ms) |
+|---|---|---|---|---|---|---|
+| BFS | 23 | 70 | 23 | 72 | 8 | 0.23 |
+| DFS | 37 | 48 | 40 | 50 | 12 | 0.25 |
+| GBFS | 23 | 79 | 23 | 61 | 10 | 0.34 |
+| A* | 23 | 51 | 23 | 61 | 10 | 0.23 |
+
+**empty maze**
+
+| algorithm | path cost | # nodes expanded | max tree depth | max # nodes in memory | max frontier size | time (ms) |
+|---|---|---|---|---|---|---|
+| BFS | 14 | 92 | 14 | 96 | 12 | 0.35 |
+| DFS | 16 | 16 | 16 | 40 | 24 | 0.09 |
+| GBFS | 14 | 14 | 14 | 43 | 29 | 0.09 |
+| A* | 14 | 14 | 14 | 43 | 29 | 0.09 |
+
+**empty_2 maze**
+
+| algorithm | path cost | # nodes expanded | max tree depth | max # nodes in memory | max frontier size | time (ms) |
+|---|---|---|---|---|---|---|
+| BFS | 14 | 92 | 14 | 96 | 11 | 0.34 |
+| DFS | 54 | 70 | 58 | 94 | 37 | 0.49 |
+| GBFS | 14 | 14 | 14 | 43 | 29 | 0.09 |
+| A* | 14 | 14 | 14 | 43 | 29 | 0.09 |
+
