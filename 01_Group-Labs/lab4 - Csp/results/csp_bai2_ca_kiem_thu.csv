@@ -1,0 +1,6 @@
+﻿Ca kiểm thử,complete (mong đợi),complete (thực tế),consistent (mong đợi),consistent (thực tế),Kết quả
+T1: phép gán rỗng,False,False,True,True,ĐẠT
+"T2: một phần, hai đỉnh kề khác màu",False,False,True,True,ĐẠT
+"T3: một phần, hai đỉnh kề cùng màu",False,False,False,False,ĐẠT
+"T4: đầy đủ, mọi đỉnh cùng màu đỏ",True,True,False,False,ĐẠT
+"T5: đầy đủ, tô tham lam (hợp lệ)",True,True,True,True,ĐẠT

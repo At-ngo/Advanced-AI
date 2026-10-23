@@ -1,0 +1,9 @@
+﻿Algorithm,Board size,Avg. Run time (ms),Avg. number of conflicts,% of runs ending in optimal solution,Avg. steps,Avg. evals of h
+Steepest asc. HC,4,0.1214,0.654,41.8,1.546,26.536
+Ineff. Stochastic HC,4,0.1381,0.794,35.4,1.868,31.168
+Efficient Stochastic HC,4,0.5895,0.788,34.6,1.85,67.648
+Simulated Annealing,4,0.5905,0.0,100.0,20.32,48.746
+Steepest asc. HC,8,1.6408,1.256,14.6,3.188,227.352
+Ineff. Stochastic HC,8,2.3419,1.274,15.0,4.908,323.448
+Efficient Stochastic HC,8,5.5002,1.348,12.8,4.758,487.638
+Simulated Annealing,8,9.1436,0.002,99.8,114.632,751.114

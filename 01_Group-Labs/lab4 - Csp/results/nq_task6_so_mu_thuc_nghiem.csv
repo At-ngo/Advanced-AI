@@ -1,0 +1,6 @@
+﻿Thuật toán,Số mũ thực nghiệm k (t ~ n^k)
+Steepest asc. HC,3.86
+Ineff. Stochastic HC,4.03
+Efficient Stochastic HC,3.26
+Efficient Stochastic HC (Δh O(1)),2.62
+Simulated Annealing,3.9

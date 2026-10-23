@@ -1,0 +1,15 @@
+﻿Bài toán,Kích thước,Thuật toán,Số màu,Thành công (%),Xung đột / COUNT,Thời gian (s)
+Tô màu,n = 10,Backtracking,4,100.0,20.0,3.8e-05
+Tô màu,n = 10,Backtracking,3,15.0,116.5,0.000166
+Tô màu,n = 10,MRV + Backtracking,4,100.0,11.0,9.3e-05
+Tô màu,n = 10,MRV + Backtracking,3,15.0,26.4,0.000259
+Tô màu,n = 10,Forward Checking,4,100.0,14.7,3.3e-05
+Tô màu,n = 10,Forward Checking,3,15.0,40.2,0.000142
+Tô màu,n = 10,FC + MRV,4,100.0,11.0,9.6e-05
+Tô màu,n = 10,FC + MRV,3,15.0,21.2,0.000265
+Tô màu,n = 10,Min-Conflicts,4,100.0,9.8,5.4e-05
+Tô màu,n = 10,Min-Conflicts,3,15.0,2810.8,0.006565
+Tô màu,n = 40,Min-Conflicts,4,100.0,500.8,0.001901
+Tô màu,n = 40,Min-Conflicts,3,0.0,13200.0,0.04777
+Tô màu,n = 120,Min-Conflicts,4,100.0,5263.8,0.032796
+Tô màu,n = 120,Min-Conflicts,3,0.0,39600.0,0.249389

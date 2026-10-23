@@ -1,0 +1,5 @@
+﻿Thuật toán,Kết quả,COUNT (nút),Số lần gán thử,Thời gian (ms),Nghiệm hợp lệ
+Backtracking (gốc),limit,20001,20000,34.029,-
++ MRV,solution,41,40,1.905,True
++ LCV,limit,20001,20000,96.976,-
++ MRV + LCV,solution,52,51,2.044,True

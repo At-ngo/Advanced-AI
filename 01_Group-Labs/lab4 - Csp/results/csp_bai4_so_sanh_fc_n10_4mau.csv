@@ -1,0 +1,8 @@
+﻿Thuật toán,Kết quả,COUNT (nút),Số lần gán thử,Thời gian (ms),Nghiệm hợp lệ
+Backtracking (gốc),solution,11,10,0.023,True
++ MRV,solution,11,10,0.073,True
++ LCV,solution,11,10,0.049,True
++ MRV + LCV,solution,11,10,0.173,True
+Forward Checking,solution,11,10,0.015,True
+FC + MRV,solution,11,10,0.082,True
+FC + MRV + LCV,solution,11,10,0.119,True

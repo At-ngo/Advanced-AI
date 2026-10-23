@@ -1,0 +1,7 @@
+﻿n,Thuật toán,Số lượt thất bại,Cực tiểu cục bộ chặt,Plateau (còn nước đi ngang),Còn nước cải thiện (dừng sai),h cuối trung bình (lượt thất bại)
+4,Steepest asc. HC,291,0,291,0,1.1237
+4,Ineff. Stochastic HC,323,0,323,0,1.2291
+4,Efficient Stochastic HC,327,0,327,0,1.2049
+8,Steepest asc. HC,427,7,420,0,1.4707
+8,Ineff. Stochastic HC,425,4,421,0,1.4988
+8,Efficient Stochastic HC,436,6,430,0,1.5459

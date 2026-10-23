@@ -1,0 +1,8 @@
+﻿Thuật toán,Kết quả,COUNT (nút),Số lần gán thử,Thời gian (ms),Nghiệm hợp lệ
+Backtracking (gốc),unsat,70,69,0.079,-
++ MRV,unsat,34,33,0.29,-
++ LCV,unsat,70,69,0.326,-
++ MRV + LCV,unsat,34,33,0.37,-
+Forward Checking,unsat,34,57,0.109,-
+FC + MRV,unsat,28,33,0.272,-
+FC + MRV + LCV,unsat,28,33,0.366,-

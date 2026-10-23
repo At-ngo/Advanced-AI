@@ -1,0 +1,26 @@
+﻿n,Thuật toán,Thời gian TB (ms),Thành công (%),Số lần đánh giá h TB
+4,Steepest asc. HC,0.117,43.3333,26.2
+4,Ineff. Stochastic HC,0.1467,46.6667,31.4
+4,Efficient Stochastic HC,0.521,40.0,64.8333
+4,Efficient Stochastic HC (Δh O(1)),0.2555,40.0,64.8333
+4,Simulated Annealing,0.4093,100.0,47.3
+8,Steepest asc. HC,1.5808,3.3333,223.1333
+8,Ineff. Stochastic HC,2.126,16.6667,305.2667
+8,Efficient Stochastic HC,5.0505,20.0,441.4333
+8,Efficient Stochastic HC (Δh O(1)),1.6516,20.0,441.4333
+8,Simulated Annealing,8.6508,100.0,732.9333
+12,Steepest asc. HC,10.6657,6.6667,771.0
+12,Ineff. Stochastic HC,13.7067,0.0,1202.2
+12,Efficient Stochastic HC,19.0491,3.3333,1373.6
+12,Efficient Stochastic HC (Δh O(1)),4.8608,3.3333,1373.6
+12,Simulated Annealing,48.9744,100.0,3067.1667
+16,Steepest asc. HC,22.6869,6.6667,1809.0
+16,Ineff. Stochastic HC,34.3124,3.3333,2737.0
+16,Efficient Stochastic HC,52.68,0.0,2837.4667
+16,Efficient Stochastic HC (Δh O(1)),10.3956,0.0,2837.4667
+16,Simulated Annealing,121.3246,100.0,6465.7333
+20,Steepest asc. HC,55.8877,3.3333,3446.3333
+20,Ineff. Stochastic HC,98.709,3.3333,5815.0
+20,Efficient Stochastic HC,93.5983,3.3333,4484.1667
+20,Efficient Stochastic HC (Δh O(1)),16.5278,3.3333,4484.1667
+20,Simulated Annealing,185.6129,90.0,8690.3667

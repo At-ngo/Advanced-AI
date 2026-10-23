@@ -1,0 +1,15 @@
+﻿Bài toán,Kích thước,Thuật toán,Số lượt,Thành công (%),Xung đột cuối TB,Thời gian (s)
+n-Queens,n = 4,Steepest asc. HC,500,41.8,0.654,0.000121
+n-Queens,n = 4,Ineff. Stochastic HC,500,35.4,0.794,0.000138
+n-Queens,n = 4,Efficient Stochastic HC,500,34.6,0.788,0.00059
+n-Queens,n = 4,Simulated Annealing,500,100.0,0.0,0.00059
+n-Queens,n = 4,Random Restart + Steepest-ascent HC,200,100.0,0.0,0.00049
+n-Queens,n = 4,Random Restart + Inefficient stochastic HC,200,100.0,0.0,0.000458
+n-Queens,n = 4,Random Restart + Efficient stochastic HC,200,100.0,0.0,0.001791
+n-Queens,n = 8,Steepest asc. HC,500,14.6,1.256,0.001641
+n-Queens,n = 8,Ineff. Stochastic HC,500,15.0,1.274,0.002342
+n-Queens,n = 8,Efficient Stochastic HC,500,12.8,1.348,0.0055
+n-Queens,n = 8,Simulated Annealing,500,99.8,0.002,0.009144
+n-Queens,n = 8,Random Restart + Steepest-ascent HC,200,100.0,0.0,0.011743
+n-Queens,n = 8,Random Restart + Inefficient stochastic HC,200,100.0,0.0,0.018104
+n-Queens,n = 8,Random Restart + Efficient stochastic HC,200,100.0,0.0,0.042894
