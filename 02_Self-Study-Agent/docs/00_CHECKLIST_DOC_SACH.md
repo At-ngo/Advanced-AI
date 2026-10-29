@@ -44,15 +44,15 @@
 ### PHẦN I: AI DỰA TRÊN LUẬT (RULE-BASED AI)
 *Mục tiêu: Hiểu cách tư duy giải bài toán trò chơi trước kỷ nguyên Deep Learning.*
 
-- [x] **[Chương 1: Coin Game](file:///d:/AlphaGoSimplified/docs_vi/ch01_CoinGame.md)** `[Cốt lõi - 30 phút]`
-  - [x] Hiểu luật chơi bốc xu (21 đồng, bốc 1 hoặc 2, bốc cuối cùng là thắng).
-  - [x] Nắm vững thuật toán số dư `coins % 3` (thắng 100% khi đi sau).
-  - [x] Chạy thử hàm `one_coin_game()` cho AI đấu với người chơi ngẫu nhiên.
+- [ ] **[Chương 1: Coin Game](file:///d:/AlphaGoSimplified/docs_vi/ch01_CoinGame.md)** `[Cốt lõi - 30 phút]`
+  - [ ] Hiểu luật chơi bốc xu (21 đồng, bốc 1 hoặc 2, bốc cuối cùng là thắng).
+  - [ ] Nắm vững thuật toán số dư `coins % 3` (thắng 100% khi đi sau).
+  - [ ] Chạy thử hàm `one_coin_game()` cho AI đấu với người chơi ngẫu nhiên.
 
-- [x] **[Chương 2: Tic Tac Toe Look-Ahead](file:///d:/AlphaGoSimplified/docs_vi/ch02_TicTacToe.md)** `[Đọc nhanh - 20 phút]`
-  - [x] Hiểu tư duy nhìn trước 1 bước (chọn ngay nước thắng).
-  - [x] Hiểu tư duy nhìn trước 2 bước (chặn nước thắng của đối thủ).
-  - [x] Hiểu tư duy nhìn trước 3 bước (tạo thế gọng kìm thắng kép).
+- [ ] **[Chương 2: Tic Tac Toe Look-Ahead](file:///d:/AlphaGoSimplified/docs_vi/ch02_TicTacToe.md)** `[Đọc nhanh - 20 phút]`
+  - [ ] Hiểu tư duy nhìn trước 1 bước (chọn ngay nước thắng).
+  - [ ] Hiểu tư duy nhìn trước 2 bước (chặn nước thắng của đối thủ).
+  - [ ] Hiểu tư duy nhìn trước 3 bước (tạo thế gọng kìm thắng kép).
 
 - [ ] **[Chương 3: Connect Four 3 Steps](file:///d:/AlphaGoSimplified/docs_vi/ch03_ConnectFour.md)** `[Đọc lướt - 20 phút]`
   - [ ] Nắm vững khái niệm "nước đi tự sát" (thả quân khiến đối thủ thắng ngay ô phía trên).
