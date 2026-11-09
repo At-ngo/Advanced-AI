@@ -1,0 +1,1292 @@
+{
+  "bai1_random_vs_random": {
+    "results": {
+      "x": 590,
+      "o": 284,
+      "d": 126
+    },
+    "time_seconds": 0.20833420753479004,
+    "pct_x": 59.0,
+    "pct_o": 28.4,
+    "pct_d": 12.6
+  },
+  "bai2_and_or": {
+    "test_cases": {
+      "case1_x_win": {
+        "board": [
+          "x",
+          "o",
+          " ",
+          "o",
+          "x",
+          " ",
+          " ",
+          " ",
+          " "
+        ],
+        "draw_is_win": {
+          "move": 2,
+          "nodes": 22,
+          "time": 0.0,
+          "has_plan": true
+        },
+        "win_only": {
+          "move": 2,
+          "nodes": 30,
+          "time": 0.0,
+          "has_plan": true
+        }
+      },
+      "case2_x_draw": {
+        "board": [
+          "x",
+          "o",
+          "x",
+          " ",
+          "o",
+          " ",
+          " ",
+          " ",
+          " "
+        ],
+        "draw_is_win": {
+          "move": 7,
+          "nodes": 64,
+          "time": 0.0,
+          "has_plan": true
+        },
+        "win_only": {
+          "move": null,
+          "nodes": 69,
+          "time": 0.0,
+          "has_plan": false
+        }
+      },
+      "case3_bad_sit": {
+        "board": [
+          "o",
+          " ",
+          "x",
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
+          "o"
+        ],
+        "draw_is_win": {
+          "move": null,
+          "nodes": 155,
+          "time": 0.006980419158935547,
+          "has_plan": false
+        },
+        "win_only": {
+          "move": null,
+          "nodes": 147,
+          "time": 0.0,
+          "has_plan": false
+        }
+      },
+      "case4_empty": {
+        "board": [
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
+          " "
+        ],
+        "draw_is_win": {
+          "move": 0,
+          "nodes": 966,
+          "time": 0.02084636688232422,
+          "has_plan": true
+        },
+        "win_only": {
+          "move": null,
+          "nodes": 16213,
+          "time": 0.34259891510009766,
+          "has_plan": false
+        }
+      }
+    },
+    "vs_random": {
+      "x": 96,
+      "o": 0,
+      "d": 4
+    },
+    "time_vs_random": 2.5317888259887695
+  },
+  "bai3_minimax_alphabeta": {
+    "tests": {
+      "case1_x_win": {
+        "minimax": {
+          "move": 2,
+          "value": 1,
+          "nodes": 190,
+          "time": 0.0035092830657958984
+        },
+        "alpha_beta": {
+          "move": 2,
+          "value": 1,
+          "nodes": 61,
+          "time": 0.0007669925689697266
+        },
+        "alpha_beta_ordered": {
+          "move": 8,
+          "value": 1,
+          "nodes": 42,
+          "time": 0.0007617473602294922
+        }
+      },
+      "case2_x_draw": {
+        "minimax": {
+          "move": 7,
+          "value": 0,
+          "nodes": 206,
+          "time": 0.003498554229736328
+        },
+        "alpha_beta": {
+          "move": 7,
+          "value": 0,
+          "nodes": 101,
+          "time": 0.0022325515747070312
+        },
+        "alpha_beta_ordered": {
+          "move": 7,
+          "value": 0,
+          "nodes": 106,
+          "time": 0.0016813278198242188
+        }
+      },
+      "case3_bad_sit": {
+        "minimax": {
+          "move": 1,
+          "value": -1,
+          "nodes": 941,
+          "time": 0.015377283096313477
+        },
+        "alpha_beta": {
+          "move": 1,
+          "value": -1,
+          "nodes": 238,
+          "time": 0.00413966178894043
+        },
+        "alpha_beta_ordered": {
+          "move": 4,
+          "value": -1,
+          "nodes": 36,
+          "time": 0.0010020732879638672
+        }
+      },
+      "case4_empty": {
+        "minimax": {
+          "move": 0,
+          "value": 0,
+          "nodes": 549946,
+          "time": 9.376564264297485
+        },
+        "alpha_beta": {
+          "move": 0,
+          "value": 0,
+          "nodes": 18297,
+          "time": 0.31958794593811035
+        },
+        "alpha_beta_ordered": {
+          "move": 4,
+          "value": 0,
+          "nodes": 7275,
+          "time": 0.13210535049438477
+        }
+      }
+    },
+    "vs_random": {
+      "x": 98,
+      "o": 0,
+      "d": 2
+    },
+    "time_vs_random": 15.319772243499756
+  },
+  "bai4_heuristic": {
+    "tests": {
+      "case1_x_win": {
+        "cutoff_2": {
+          "move": 8,
+          "value": 1,
+          "nodes": 13,
+          "time": 0.0
+        },
+        "cutoff_4": {
+          "move": 2,
+          "value": 1,
+          "nodes": 47,
+          "time": 0.006987094879150391
+        },
+        "full_ab": {
+          "move": 2,
+          "value": 1,
+          "nodes": 61,
+          "time": 0.0
+        }
+      },
+      "case2_x_draw": {
+        "cutoff_2": {
+          "move": 7,
+          "value": -0.4,
+          "nodes": 21,
+          "time": 0.0
+        },
+        "cutoff_4": {
+          "move": 7,
+          "value": 0,
+          "nodes": 81,
+          "time": 0.006892204284667969
+        },
+        "full_ab": {
+          "move": 7,
+          "value": 0,
+          "nodes": 101,
+          "time": 0.006843090057373047
+        }
+      },
+      "case3_bad_sit": {
+        "cutoff_2": {
+          "move": 4,
+          "value": -0.8,
+          "nodes": 29,
+          "time": 0.0
+        },
+        "cutoff_4": {
+          "move": 1,
+          "value": -1,
+          "nodes": 148,
+          "time": 0.006901264190673828
+        },
+        "full_ab": {
+          "move": 1,
+          "value": -1,
+          "nodes": 238,
+          "time": 0.013956546783447266
+        }
+      },
+      "case4_empty": {
+        "cutoff_2": {
+          "move": 0,
+          "value": 0,
+          "nodes": 26,
+          "time": 0.0
+        },
+        "cutoff_4": {
+          "move": 4,
+          "value": 0.0,
+          "nodes": 541,
+          "time": 0.034720420837402344
+        },
+        "full_ab": {
+          "move": 0,
+          "value": 0,
+          "nodes": 18297,
+          "time": 0.8513352870941162
+        }
+      }
+    },
+    "h2_vs_random": {
+      "x": 93,
+      "o": 0,
+      "d": 7
+    },
+    "h4_vs_random": {
+      "x": 99,
+      "o": 0,
+      "d": 1
+    },
+    "h2_vs_ab": {
+      "x": 0,
+      "o": 0,
+      "d": 1
+    },
+    "h4_vs_ab": {
+      "x": 0,
+      "o": 0,
+      "d": 1
+    },
+    "h2_vs_h4": {
+      "x": 0,
+      "o": 0,
+      "d": 1
+    }
+  },
+  "bai5_pmcs": {
+    "tests": {
+      "case1_x_win": {
+        "N_10": {
+          "action": 2,
+          "utilities": {
+            "2": 1.0,
+            "5": 1.0,
+            "6": 1.0,
+            "7": 0.0,
+            "8": 1.0
+          },
+          "time": 0.00232696533203125
+        },
+        "N_100": {
+          "action": 8,
+          "utilities": {
+            "2": 0.95,
+            "5": 0.65,
+            "6": 0.85,
+            "7": 0.6,
+            "8": 1.0
+          },
+          "time": 0.007605314254760742
+        },
+        "N_1000": {
+          "action": 8,
+          "utilities": {
+            "2": 0.855,
+            "5": 0.645,
+            "6": 0.83,
+            "7": 0.66,
+            "8": 1.0
+          },
+          "time": 0.08341622352600098
+        }
+      },
+      "case2_x_draw": {
+        "N_10": {
+          "action": 5,
+          "utilities": {
+            "3": -0.5,
+            "5": 0.0,
+            "6": -0.5,
+            "7": 0.0,
+            "8": 0.0
+          },
+          "time": 0.0
+        },
+        "N_100": {
+          "action": 6,
+          "utilities": {
+            "3": -0.45,
+            "5": -0.25,
+            "6": 0.0,
+            "7": 0.0,
+            "8": -0.55
+          },
+          "time": 0.006882905960083008
+        },
+        "N_1000": {
+          "action": 7,
+          "utilities": {
+            "3": -0.085,
+            "5": -0.31,
+            "6": -0.325,
+            "7": 0.19,
+            "8": -0.325
+          },
+          "time": 0.10144281387329102
+        }
+      },
+      "case3_bad_sit": {
+        "N_10": {
+          "action": 1,
+          "utilities": {
+            "1": -1.0,
+            "3": -1.0,
+            "4": -1.0,
+            "5": -1.0,
+            "6": -1.0,
+            "7": -1.0
+          },
+          "time": 0.0
+        },
+        "N_100": {
+          "action": 4,
+          "utilities": {
+            "1": -0.625,
+            "3": -0.125,
+            "4": 0.25,
+            "5": -0.75,
+            "6": -0.5,
+            "7": -0.75
+          },
+          "time": 0.010242462158203125
+        },
+        "N_1000": {
+          "action": 4,
+          "utilities": {
+            "1": -0.6867469879518072,
+            "3": -0.6626506024096386,
+            "4": 0.16265060240963855,
+            "5": -0.6746987951807228,
+            "6": -0.26506024096385544,
+            "7": -0.6265060240963856
+          },
+          "time": 0.11078023910522461
+        }
+      },
+      "case4_empty": {
+        "N_10": {
+          "action": 0,
+          "utilities": {
+            "0": 1.0,
+            "1": 1.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": -1.0,
+            "5": 1.0,
+            "6": -1.0,
+            "7": 1.0,
+            "8": 1.0
+          },
+          "time": 0.0
+        },
+        "N_100": {
+          "action": 4,
+          "utilities": {
+            "0": 0.18181818181818182,
+            "1": 0.18181818181818182,
+            "2": 0.09090909090909091,
+            "3": -0.2727272727272727,
+            "4": 0.7272727272727273,
+            "5": 0.5454545454545454,
+            "6": 0.7272727272727273,
+            "7": 0.09090909090909091,
+            "8": -0.2727272727272727
+          },
+          "time": 0.02088642120361328
+        },
+        "N_1000": {
+          "action": 8,
+          "utilities": {
+            "0": 0.26126126126126126,
+            "1": 0.26126126126126126,
+            "2": 0.35135135135135137,
+            "3": 0.27927927927927926,
+            "4": 0.3153153153153153,
+            "5": 0.12612612612612611,
+            "6": 0.27927927927927926,
+            "7": 0.22522522522522523,
+            "8": 0.3783783783783784
+          },
+          "time": 0.2003633975982666
+        }
+      }
+    },
+    "pmcs10_vs_random": {
+      "x": 90,
+      "o": 6,
+      "d": 4
+    },
+    "pmcs100_vs_random": {
+      "x": 96,
+      "o": 1,
+      "d": 3
+    },
+    "time_pmcs10": 0.3999185562133789,
+    "time_pmcs100": 4.211201429367065
+  },
+  "bai6_ucb1": {
+    "tests": {
+      "case1_x_win": {
+        "N_10": {
+          "action": 6,
+          "stats": {
+            "2": {
+              "utility_sum": 0.0,
+              "playouts": 1,
+              "ucb1": 2.1459660262893476,
+              "mean_val": 0.0
+            },
+            "5": {
+              "utility_sum": 1.0,
+              "playouts": 2,
+              "ucb1": 2.0174271293851467,
+              "mean_val": 0.5
+            },
+            "6": {
+              "utility_sum": 3.0,
+              "playouts": 3,
+              "ucb1": 2.2389740629499464,
+              "mean_val": 1.0
+            },
+            "7": {
+              "utility_sum": 2.0,
+              "playouts": 2,
+              "ucb1": 2.5174271293851467,
+              "mean_val": 1.0
+            },
+            "8": {
+              "utility_sum": 2.0,
+              "playouts": 2,
+              "ucb1": 2.5174271293851467,
+              "mean_val": 1.0
+            }
+          },
+          "time": 0.001041412353515625
+        },
+        "N_100": {
+          "action": 8,
+          "stats": {
+            "2": {
+              "utility_sum": 21.0,
+              "playouts": 24,
+              "ucb1": 1.4944870314749732,
+              "mean_val": 0.875
+            },
+            "5": {
+              "utility_sum": 14.0,
+              "playouts": 18,
+              "ucb1": 1.4930997865408937,
+              "mean_val": 0.7777777777777778
+            },
+            "6": {
+              "utility_sum": 7.0,
+              "playouts": 12,
+              "ucb1": 1.4594202949594888,
+              "mean_val": 0.5833333333333334
+            },
+            "7": {
+              "utility_sum": 4.0,
+              "playouts": 9,
+              "ucb1": 1.4560625307012087,
+              "mean_val": 0.4444444444444444
+            },
+            "8": {
+              "utility_sum": 37.0,
+              "playouts": 37,
+              "ucb1": 1.4989269667611869,
+              "mean_val": 1.0
+            }
+          },
+          "time": 0.006908416748046875
+        },
+        "N_1000": {
+          "action": 8,
+          "stats": {
+            "2": {
+              "utility_sum": 98.0,
+              "playouts": 121,
+              "ucb1": 1.1478193725400678,
+              "mean_val": 0.8099173553719008
+            },
+            "5": {
+              "utility_sum": 54.0,
+              "playouts": 75,
+              "ucb1": 1.1491932052578695,
+              "mean_val": 0.72
+            },
+            "6": {
+              "utility_sum": 118.0,
+              "playouts": 141,
+              "ucb1": 1.1499007488035797,
+              "mean_val": 0.8368794326241135
+            },
+            "7": {
+              "utility_sum": 35.0,
+              "playouts": 55,
+              "ucb1": 1.1375533220654632,
+              "mean_val": 0.6363636363636364
+            },
+            "8": {
+              "utility_sum": 608.0,
+              "playouts": 608,
+              "ucb1": 1.1507410999269214,
+              "mean_val": 1.0
+            }
+          },
+          "time": 0.0475926399230957
+        }
+      },
+      "case2_x_draw": {
+        "N_10": {
+          "action": 3,
+          "stats": {
+            "3": {
+              "utility_sum": 2.0,
+              "playouts": 3,
+              "ucb1": 1.905640729616613,
+              "mean_val": 0.6666666666666666
+            },
+            "5": {
+              "utility_sum": 0.0,
+              "playouts": 2,
+              "ucb1": 1.5174271293851465,
+              "mean_val": 0.0
+            },
+            "6": {
+              "utility_sum": -1.0,
+              "playouts": 1,
+              "ucb1": 1.1459660262893476,
+              "mean_val": -1.0
+            },
+            "7": {
+              "utility_sum": 1.0,
+              "playouts": 3,
+              "ucb1": 1.5723073962832796,
+              "mean_val": 0.3333333333333333
+            },
+            "8": {
+              "utility_sum": -1.0,
+              "playouts": 1,
+              "ucb1": 1.1459660262893476,
+              "mean_val": -1.0
+            }
+          },
+          "time": 0.0010383129119873047
+        },
+        "N_100": {
+          "action": 5,
+          "stats": {
+            "3": {
+              "utility_sum": -4.0,
+              "playouts": 7,
+              "ucb1": 0.5756385191473514,
+              "mean_val": -0.5714285714285714
+            },
+            "5": {
+              "utility_sum": 11.0,
+              "playouts": 46,
+              "ucb1": 0.6865952833407211,
+              "mean_val": 0.2391304347826087
+            },
+            "6": {
+              "utility_sum": -3.0,
+              "playouts": 10,
+              "ucb1": 0.6597051824376163,
+              "mean_val": -0.3
+            },
+            "7": {
+              "utility_sum": 4.0,
+              "playouts": 33,
+              "ucb1": 0.6495124367460207,
+              "mean_val": 0.12121212121212122
+            },
+            "8": {
+              "utility_sum": -4.0,
+              "playouts": 4,
+              "ucb1": 0.5174271293851465,
+              "mean_val": -1.0
+            }
+          },
+          "time": 0.008925437927246094
+        },
+        "N_1000": {
+          "action": 7,
+          "stats": {
+            "3": {
+              "utility_sum": -12.0,
+              "playouts": 72,
+              "ucb1": 0.271376814146411,
+              "mean_val": -0.16666666666666666
+            },
+            "5": {
+              "utility_sum": -13.0,
+              "playouts": 30,
+              "ucb1": 0.2452807091081779,
+              "mean_val": -0.43333333333333335
+            },
+            "6": {
+              "utility_sum": -13.0,
+              "playouts": 50,
+              "ucb1": 0.2656521769756932,
+              "mean_val": -0.26
+            },
+            "7": {
+              "utility_sum": 121.0,
+              "playouts": 827,
+              "ucb1": 0.27556201948953163,
+              "mean_val": 0.14631197097944376
+            },
+            "8": {
+              "utility_sum": -12.0,
+              "playouts": 21,
+              "ucb1": 0.23967034679358723,
+              "mean_val": -0.5714285714285714
+            }
+          },
+          "time": 0.11098694801330566
+        }
+      },
+      "case3_bad_sit": {
+        "N_10": {
+          "action": 4,
+          "stats": {
+            "1": {
+              "utility_sum": -1.0,
+              "playouts": 1,
+              "ucb1": 1.1459660262893476,
+              "mean_val": -1.0
+            },
+            "3": {
+              "utility_sum": -1.0,
+              "playouts": 1,
+              "ucb1": 1.1459660262893476,
+              "mean_val": -1.0
+            },
+            "4": {
+              "utility_sum": 4.0,
+              "playouts": 4,
+              "ucb1": 2.0729830131446736,
+              "mean_val": 1.0
+            },
+            "5": {
+              "utility_sum": 0.0,
+              "playouts": 2,
+              "ucb1": 1.5174271293851465,
+              "mean_val": 0.0
+            },
+            "6": {
+              "utility_sum": -1.0,
+              "playouts": 1,
+              "ucb1": 1.1459660262893476,
+              "mean_val": -1.0
+            },
+            "7": {
+              "utility_sum": -1.0,
+              "playouts": 1,
+              "ucb1": 1.1459660262893476,
+              "mean_val": -1.0
+            }
+          },
+          "time": 0.0
+        },
+        "N_100": {
+          "action": 4,
+          "stats": {
+            "1": {
+              "utility_sum": -8.0,
+              "playouts": 16,
+              "ucb1": 0.25871356469257323,
+              "mean_val": -0.5
+            },
+            "3": {
+              "utility_sum": -7.0,
+              "playouts": 10,
+              "ucb1": 0.2597051824376164,
+              "mean_val": -0.7
+            },
+            "4": {
+              "utility_sum": -5.0,
+              "playouts": 48,
+              "ucb1": 0.333876814146411,
+              "mean_val": -0.10416666666666667
+            },
+            "5": {
+              "utility_sum": -6.0,
+              "playouts": 6,
+              "ucb1": 0.2389740629499464,
+              "mean_val": -1.0
+            },
+            "6": {
+              "utility_sum": -8.0,
+              "playouts": 14,
+              "ucb1": 0.23967034679358723,
+              "mean_val": -0.5714285714285714
+            },
+            "7": {
+              "utility_sum": -6.0,
+              "playouts": 6,
+              "ucb1": 0.2389740629499464,
+              "mean_val": -1.0
+            }
+          },
+          "time": 0.011028528213500977
+        },
+        "N_1000": {
+          "action": 4,
+          "stats": {
+            "1": {
+              "utility_sum": -9.0,
+              "playouts": 9,
+              "ucb1": 0.23897406294994616,
+              "mean_val": -1.0
+            },
+            "3": {
+              "utility_sum": -12.0,
+              "playouts": 23,
+              "ucb1": 0.25329272186898133,
+              "mean_val": -0.5217391304347826
+            },
+            "4": {
+              "utility_sum": 157.0,
+              "playouts": 875,
+              "ucb1": 0.30508347552462234,
+              "mean_val": 0.17942857142857144
+            },
+            "5": {
+              "utility_sum": -10.0,
+              "playouts": 14,
+              "ucb1": 0.27910352599814037,
+              "mean_val": -0.7142857142857143
+            },
+            "6": {
+              "utility_sum": -12.0,
+              "playouts": 54,
+              "ucb1": 0.28358682090615994,
+              "mean_val": -0.2222222222222222
+            },
+            "7": {
+              "utility_sum": -12.0,
+              "playouts": 25,
+              "ucb1": 0.26338443776996767,
+              "mean_val": -0.48
+            }
+          },
+          "time": 0.11177444458007812
+        }
+      },
+      "case4_empty": {
+        "N_10": {
+          "action": 1,
+          "stats": {
+            "0": {
+              "utility_sum": -1.0,
+              "playouts": 1,
+              "ucb1": 1.1459660262893476,
+              "mean_val": -1.0
+            },
+            "1": {
+              "utility_sum": 2.0,
+              "playouts": 2,
+              "ucb1": 2.5174271293851467,
+              "mean_val": 1.0
+            },
+            "2": {
+              "utility_sum": 1.0,
+              "playouts": 1,
+              "ucb1": 3.1459660262893476,
+              "mean_val": 1.0
+            },
+            "3": {
+              "utility_sum": -1.0,
+              "playouts": 1,
+              "ucb1": 1.1459660262893476,
+              "mean_val": -1.0
+            },
+            "4": {
+              "utility_sum": 1.0,
+              "playouts": 1,
+              "ucb1": 3.1459660262893476,
+              "mean_val": 1.0
+            },
+            "5": {
+              "utility_sum": 1.0,
+              "playouts": 1,
+              "ucb1": 3.1459660262893476,
+              "mean_val": 1.0
+            },
+            "6": {
+              "utility_sum": 1.0,
+              "playouts": 1,
+              "ucb1": 3.1459660262893476,
+              "mean_val": 1.0
+            },
+            "7": {
+              "utility_sum": -1.0,
+              "playouts": 1,
+              "ucb1": 1.1459660262893476,
+              "mean_val": -1.0
+            },
+            "8": {
+              "utility_sum": 0.0,
+              "playouts": 1,
+              "ucb1": 2.1459660262893476,
+              "mean_val": 0.0
+            }
+          },
+          "time": 0.0
+        },
+        "N_100": {
+          "action": 4,
+          "stats": {
+            "0": {
+              "utility_sum": 2.0,
+              "playouts": 10,
+              "ucb1": 1.1597051824376163,
+              "mean_val": 0.2
+            },
+            "1": {
+              "utility_sum": -1.0,
+              "playouts": 5,
+              "ucb1": 1.1572280848830225,
+              "mean_val": -0.2
+            },
+            "2": {
+              "utility_sum": -2.0,
+              "playouts": 4,
+              "ucb1": 1.0174271293851465,
+              "mean_val": -0.5
+            },
+            "3": {
+              "utility_sum": 0.0,
+              "playouts": 8,
+              "ucb1": 1.0729830131446738,
+              "mean_val": 0.0
+            },
+            "4": {
+              "utility_sum": 29.0,
+              "playouts": 41,
+              "ucb1": 1.1812816795465455,
+              "mean_val": 0.7073170731707317
+            },
+            "5": {
+              "utility_sum": 5.0,
+              "playouts": 13,
+              "ucb1": 1.2263325110428116,
+              "mean_val": 0.38461538461538464
+            },
+            "6": {
+              "utility_sum": 0.0,
+              "playouts": 7,
+              "ucb1": 1.1470670905759228,
+              "mean_val": 0.0
+            },
+            "7": {
+              "utility_sum": -2.0,
+              "playouts": 2,
+              "ucb1": 1.1459660262893476,
+              "mean_val": -1.0
+            },
+            "8": {
+              "utility_sum": 2.0,
+              "playouts": 10,
+              "ucb1": 1.1597051824376163,
+              "mean_val": 0.2
+            }
+          },
+          "time": 0.02074599266052246
+        },
+        "N_1000": {
+          "action": 4,
+          "stats": {
+            "0": {
+              "utility_sum": 13.0,
+              "playouts": 54,
+              "ucb1": 0.7465497838691229,
+              "mean_val": 0.24074074074074073
+            },
+            "1": {
+              "utility_sum": 33.0,
+              "playouts": 103,
+              "ucb1": 0.6866275752477886,
+              "mean_val": 0.32038834951456313
+            },
+            "2": {
+              "utility_sum": 33.0,
+              "playouts": 105,
+              "ucb1": 0.6770201778099723,
+              "mean_val": 0.3142857142857143
+            },
+            "3": {
+              "utility_sum": 17.0,
+              "playouts": 73,
+              "ucb1": 0.667909549350505,
+              "mean_val": 0.2328767123287671
+            },
+            "4": {
+              "utility_sum": 132.0,
+              "playouts": 284,
+              "ucb1": 0.6853474863274032,
+              "mean_val": 0.4647887323943662
+            },
+            "5": {
+              "utility_sum": 16.0,
+              "playouts": 69,
+              "ucb1": 0.6793489065291268,
+              "mean_val": 0.2318840579710145
+            },
+            "6": {
+              "utility_sum": 42.0,
+              "playouts": 121,
+              "ucb1": 0.6850094551846961,
+              "mean_val": 0.34710743801652894
+            },
+            "7": {
+              "utility_sum": -1.0,
+              "playouts": 30,
+              "ucb1": 0.6452807091081779,
+              "mean_val": -0.03333333333333333
+            },
+            "8": {
+              "utility_sum": 63.0,
+              "playouts": 161,
+              "ucb1": 0.6842388534474444,
+              "mean_val": 0.391304347826087
+            }
+          },
+          "time": 0.18768525123596191
+        }
+      }
+    },
+    "ucb1_10_vs_random": {
+      "x": 87,
+      "o": 6,
+      "d": 7
+    },
+    "ucb1_100_vs_random": {
+      "x": 95,
+      "o": 0,
+      "d": 5
+    },
+    "time_ucb1_10": 0.4585254192352295,
+    "time_ucb1_100": 3.993046760559082
+  },
+  "bai7_interactive": {
+    "match1_x_agent": [
+      {
+        "step": 1,
+        "player": "x",
+        "actor": "AlphaBeta (Agent)",
+        "action": 4,
+        "board": [
+          " ",
+          " ",
+          " ",
+          " ",
+          "x",
+          " ",
+          " ",
+          " ",
+          " "
+        ],
+        "terminal": false,
+        "winner": null
+      },
+      {
+        "step": 2,
+        "player": "o",
+        "actor": "Human (Simulated)",
+        "action": 3,
+        "board": [
+          " ",
+          " ",
+          " ",
+          "o",
+          "x",
+          " ",
+          " ",
+          " ",
+          " "
+        ],
+        "terminal": false,
+        "winner": null
+      },
+      {
+        "step": 3,
+        "player": "x",
+        "actor": "AlphaBeta (Agent)",
+        "action": 8,
+        "board": [
+          " ",
+          " ",
+          " ",
+          "o",
+          "x",
+          " ",
+          " ",
+          " ",
+          "x"
+        ],
+        "terminal": false,
+        "winner": null
+      },
+      {
+        "step": 4,
+        "player": "o",
+        "actor": "Human (Simulated)",
+        "action": 7,
+        "board": [
+          " ",
+          " ",
+          " ",
+          "o",
+          "x",
+          " ",
+          " ",
+          "o",
+          "x"
+        ],
+        "terminal": false,
+        "winner": null
+      },
+      {
+        "step": 5,
+        "player": "x",
+        "actor": "AlphaBeta (Agent)",
+        "action": 6,
+        "board": [
+          " ",
+          " ",
+          " ",
+          "o",
+          "x",
+          " ",
+          "x",
+          "o",
+          "x"
+        ],
+        "terminal": false,
+        "winner": null
+      },
+      {
+        "step": 6,
+        "player": "o",
+        "actor": "Human (Simulated)",
+        "action": 5,
+        "board": [
+          " ",
+          " ",
+          " ",
+          "o",
+          "x",
+          "o",
+          "x",
+          "o",
+          "x"
+        ],
+        "terminal": false,
+        "winner": null
+      },
+      {
+        "step": 7,
+        "player": "x",
+        "actor": "AlphaBeta (Agent)",
+        "action": 2,
+        "board": [
+          " ",
+          " ",
+          "x",
+          "o",
+          "x",
+          "o",
+          "x",
+          "o",
+          "x"
+        ],
+        "terminal": true,
+        "winner": "x"
+      }
+    ],
+    "match2_o_agent": [
+      {
+        "step": 1,
+        "player": "x",
+        "actor": "Human (Simulated)",
+        "action": 0,
+        "board": [
+          "x",
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
+          " "
+        ],
+        "terminal": false,
+        "winner": null
+      },
+      {
+        "step": 2,
+        "player": "o",
+        "actor": "AlphaBeta (Agent)",
+        "action": 4,
+        "board": [
+          "x",
+          " ",
+          " ",
+          " ",
+          "o",
+          " ",
+          " ",
+          " ",
+          " "
+        ],
+        "terminal": false,
+        "winner": null
+      },
+      {
+        "step": 3,
+        "player": "x",
+        "actor": "Human (Simulated)",
+        "action": 1,
+        "board": [
+          "x",
+          "x",
+          " ",
+          " ",
+          "o",
+          " ",
+          " ",
+          " ",
+          " "
+        ],
+        "terminal": false,
+        "winner": null
+      },
+      {
+        "step": 4,
+        "player": "o",
+        "actor": "AlphaBeta (Agent)",
+        "action": 2,
+        "board": [
+          "x",
+          "x",
+          "o",
+          " ",
+          "o",
+          " ",
+          " ",
+          " ",
+          " "
+        ],
+        "terminal": false,
+        "winner": null
+      },
+      {
+        "step": 5,
+        "player": "x",
+        "actor": "Human (Simulated)",
+        "action": 5,
+        "board": [
+          "x",
+          "x",
+          "o",
+          " ",
+          "o",
+          "x",
+          " ",
+          " ",
+          " "
+        ],
+        "terminal": false,
+        "winner": null
+      },
+      {
+        "step": 6,
+        "player": "o",
+        "actor": "AlphaBeta (Agent)",
+        "action": 6,
+        "board": [
+          "x",
+          "x",
+          "o",
+          " ",
+          "o",
+          "x",
+          "o",
+          " ",
+          " "
+        ],
+        "terminal": true,
+        "winner": "o"
+      }
+    ]
+  }
+}

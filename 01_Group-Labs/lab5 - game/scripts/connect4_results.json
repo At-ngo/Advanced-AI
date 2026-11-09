@@ -1,0 +1,482 @@
+{
+  "task1_theory": {
+    "board_shape": [
+      6,
+      7
+    ],
+    "max_moves": 42,
+    "branching_factor_b": 7,
+    "state_space_naive_upper_bound": 1.0941898913151237e+20,
+    "state_space_tromp_exact": 4531985219092,
+    "game_tree_upper_bound": 3.1197348228454238e+35,
+    "explanation": "Every cell can be empty, Red, or Yellow (3^42). However, pieces must be gravity-supported, giving sum_{c=0..7} prod_c (h_c+1) configurations bounded by ~4.53*10^12. The game tree has up to 7 choices per ply up to depth 42, giving an upper bound of 7^42 ~ 10^35."
+  },
+  "task2_random": {
+    "results": {
+      "1": 532,
+      "-1": 468,
+      "0": 0
+    },
+    "pct_red": 53.2,
+    "pct_yellow": 46.8,
+    "pct_draw": 0.0,
+    "time": 0.23024320602416992
+  },
+  "task3_minimax": {
+    "scale_results": {
+      "3x3_k3": {
+        "minimax": {
+          "nodes": 1721,
+          "time": 0.01020193099975586,
+          "move": 0,
+          "val": 0.0
+        },
+        "alphabeta": {
+          "nodes": 376,
+          "time": 0.002265453338623047,
+          "move": 0,
+          "val": 0.0
+        },
+        "alphabeta_ordered": {
+          "nodes": 374,
+          "time": 0.002882719039916992,
+          "move": 1,
+          "val": 0.0
+        }
+      },
+      "3x4_k3": {
+        "minimax": {
+          "nodes": 62599,
+          "time": 0.4135410785675049,
+          "move": 0,
+          "val": 1.0
+        },
+        "alphabeta": {
+          "nodes": 599,
+          "time": 0.0069272518157958984,
+          "move": 0,
+          "val": 1.0
+        },
+        "alphabeta_ordered": {
+          "nodes": 510,
+          "time": 0.0,
+          "move": 1,
+          "val": 1.0
+        }
+      },
+      "4x4_k4": {
+        "minimax": {
+          "nodes": ">10,000,000 (timeout)",
+          "time": ">60s",
+          "move": 1,
+          "val": 0.0
+        },
+        "alphabeta": {
+          "nodes": 50956,
+          "time": 0.2949535846710205,
+          "move": 0,
+          "val": 0.0
+        },
+        "alphabeta_ordered": {
+          "nodes": 127971,
+          "time": 0.8395767211914062,
+          "move": 1,
+          "val": 0.0
+        }
+      }
+    },
+    "playtime_4x4": {
+      "results": {
+        "1": 26,
+        "-1": 0,
+        "0": 24
+      },
+      "time": 53.44783878326416
+    }
+  },
+  "task4_heuristic": {
+    "test_boards": {
+      "horizontal_win": {
+        "cutoff_2": {
+          "move": 3,
+          "score": 10000.0,
+          "nodes": 1,
+          "time": 0.0
+        },
+        "cutoff_4": {
+          "move": 3,
+          "score": 10000.0,
+          "nodes": 1,
+          "time": 0.0
+        }
+      },
+      "vertical_win": {
+        "cutoff_2": {
+          "move": 2,
+          "score": 10000.0,
+          "nodes": 9,
+          "time": 0.003038167953491211
+        },
+        "cutoff_4": {
+          "move": 2,
+          "score": 10000.0,
+          "nodes": 98,
+          "time": 0.0069255828857421875
+        }
+      },
+      "diagonal_down_win": {
+        "cutoff_2": {
+          "move": 3,
+          "score": 10000.0,
+          "nodes": 1,
+          "time": 0.0
+        },
+        "cutoff_4": {
+          "move": 3,
+          "score": 10000.0,
+          "nodes": 1,
+          "time": 0.0
+        }
+      },
+      "diagonal_up_win": {
+        "cutoff_2": {
+          "move": 0,
+          "score": 10000.0,
+          "nodes": 23,
+          "time": 0.001787424087524414
+        },
+        "cutoff_4": {
+          "move": 0,
+          "score": 10000.0,
+          "nodes": 585,
+          "time": 0.029767990112304688
+        }
+      },
+      "block_opponent": {
+        "cutoff_2": {
+          "move": 3,
+          "score": -10000.0,
+          "nodes": 25,
+          "time": 0.007424354553222656
+        },
+        "cutoff_4": {
+          "move": 3,
+          "score": -10000.0,
+          "nodes": 372,
+          "time": 0.020683765411376953
+        }
+      }
+    },
+    "h2_vs_random": {
+      "results": {
+        "1": 30,
+        "-1": 0,
+        "0": 0
+      },
+      "time": 0.25223684310913086
+    },
+    "h4_vs_random": {
+      "results": {
+        "1": 15,
+        "-1": 0,
+        "0": 0
+      },
+      "time": 1.6150918006896973
+    },
+    "h4_vs_h2": {
+      "winner": -1,
+      "moves": 34,
+      "trace": [
+        {
+          "step": 1,
+          "player": 1,
+          "col": 3
+        },
+        {
+          "step": 2,
+          "player": -1,
+          "col": 2
+        },
+        {
+          "step": 3,
+          "player": 1,
+          "col": 3
+        },
+        {
+          "step": 4,
+          "player": -1,
+          "col": 3
+        },
+        {
+          "step": 5,
+          "player": 1,
+          "col": 4
+        },
+        {
+          "step": 6,
+          "player": -1,
+          "col": 3
+        },
+        {
+          "step": 7,
+          "player": 1,
+          "col": 6
+        },
+        {
+          "step": 8,
+          "player": -1,
+          "col": 5
+        },
+        {
+          "step": 9,
+          "player": 1,
+          "col": 4
+        },
+        {
+          "step": 10,
+          "player": -1,
+          "col": 2
+        },
+        {
+          "step": 11,
+          "player": 1,
+          "col": 5
+        },
+        {
+          "step": 12,
+          "player": -1,
+          "col": 6
+        },
+        {
+          "step": 13,
+          "player": 1,
+          "col": 2
+        },
+        {
+          "step": 14,
+          "player": -1,
+          "col": 3
+        },
+        {
+          "step": 15,
+          "player": 1,
+          "col": 3
+        },
+        {
+          "step": 16,
+          "player": -1,
+          "col": 2
+        },
+        {
+          "step": 17,
+          "player": 1,
+          "col": 5
+        },
+        {
+          "step": 18,
+          "player": -1,
+          "col": 5
+        },
+        {
+          "step": 19,
+          "player": 1,
+          "col": 5
+        },
+        {
+          "step": 20,
+          "player": -1,
+          "col": 1
+        },
+        {
+          "step": 21,
+          "player": 1,
+          "col": 1
+        },
+        {
+          "step": 22,
+          "player": -1,
+          "col": 2
+        },
+        {
+          "step": 23,
+          "player": 1,
+          "col": 2
+        },
+        {
+          "step": 24,
+          "player": -1,
+          "col": 5
+        },
+        {
+          "step": 25,
+          "player": 1,
+          "col": 0
+        },
+        {
+          "step": 26,
+          "player": -1,
+          "col": 0
+        },
+        {
+          "step": 27,
+          "player": 1,
+          "col": 1
+        },
+        {
+          "step": 28,
+          "player": -1,
+          "col": 1
+        },
+        {
+          "step": 29,
+          "player": 1,
+          "col": 6
+        },
+        {
+          "step": 30,
+          "player": -1,
+          "col": 6
+        },
+        {
+          "step": 31,
+          "player": 1,
+          "col": 6
+        },
+        {
+          "step": 32,
+          "player": -1,
+          "col": 1
+        },
+        {
+          "step": 33,
+          "player": 1,
+          "col": 4
+        },
+        {
+          "step": 34,
+          "player": -1,
+          "col": 4
+        }
+      ]
+    }
+  },
+  "task5_pmcs": {
+    "test_boards": {
+      "horizontal_win": {
+        "best_action": 3,
+        "scores": {
+          "0": 0.0,
+          "1": 0.6,
+          "2": -0.2,
+          "3": 1.0,
+          "4": 0.4,
+          "5": -0.2,
+          "6": 0.0
+        },
+        "time": 0.009757280349731445
+      },
+      "vertical_win": {
+        "best_action": 2,
+        "scores": {
+          "0": 0.2,
+          "1": 0.2,
+          "2": 1.0,
+          "3": 0.4,
+          "4": -0.4,
+          "5": -0.4,
+          "6": 0.4
+        },
+        "time": 0.00637507438659668
+      },
+      "diagonal_down_win": {
+        "best_action": 3,
+        "scores": {
+          "0": -0.2,
+          "1": 0.4,
+          "2": 0.4,
+          "3": 1.0,
+          "4": 0.6,
+          "5": 0.0,
+          "6": -0.6
+        },
+        "time": 0.0059964656829833984
+      },
+      "diagonal_up_win": {
+        "best_action": 0,
+        "scores": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 0.4,
+          "4": 0.6,
+          "5": 1.0,
+          "6": 0.6
+        },
+        "time": 0.007342338562011719
+      },
+      "block_opponent": {
+        "best_action": 4,
+        "scores": {
+          "0": -0.8,
+          "1": -0.4,
+          "2": -0.8,
+          "3": -1.0,
+          "4": 0.0,
+          "5": -0.8,
+          "6": -0.8
+        },
+        "time": 0.005570173263549805
+      }
+    },
+    "pmcs_vs_random": {
+      "results": {
+        "1": 14,
+        "-1": 1,
+        "0": 0
+      },
+      "time": 1.132434606552124
+    }
+  },
+  "graduate_task": {
+    "best_first_move": 3,
+    "best_score": 0,
+    "all_first_moves": {
+      "0": {
+        "score": -18,
+        "nodes": 84,
+        "time": 0.005342960357666016
+      },
+      "1": {
+        "score": -14,
+        "nodes": 88,
+        "time": 0.006184577941894531
+      },
+      "2": {
+        "score": 0,
+        "nodes": 76,
+        "time": 0.004582881927490234
+      },
+      "3": {
+        "score": 0,
+        "nodes": 101,
+        "time": 0.0062448978424072266
+      },
+      "4": {
+        "score": 0,
+        "nodes": 76,
+        "time": 0.002637147903442383
+      },
+      "5": {
+        "score": -14,
+        "nodes": 88,
+        "time": 0.004180908203125
+      },
+      "6": {
+        "score": -18,
+        "nodes": 83,
+        "time": 0.006964683532714844
+      }
+    },
+    "mathematical_explanation": "Column 3 (the exact center column) is mathematically optimal because it is part of 14 distinct possible 4-in-a-row lines (3 horizontal, 3 vertical, 4 positive diagonal, 4 negative diagonal). In contrast, outer columns participate in only 3-4 lines."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "problem_size": {
+    "2x2_dots_1box": {
+      "lines": 4,
+      "state_space": 16,
+      "game_tree": 24
+    },
+    "3x3_dots_4boxes": {
+      "lines": 12,
+      "state_space": 4096,
+      "game_tree": 479001600
+    },
+    "4x4_dots_9boxes": {
+      "lines": 24,
+      "state_space": 16777216,
+      "game_tree": 620448401733239439360000
+    }
+  },
+  "random_vs_random_3x3": {
+    "results": {
+      "1": 400,
+      "-1": 432,
+      "0": 168
+    },
+    "time": 0.0938267707824707
+  },
+  "alphabeta_exact": {
+    "2x2": {
+      "val": -1.0,
+      "move": [
+        "h",
+        0,
+        0
+      ],
+      "nodes": 440722,
+      "time": 0.0
+    },
+    "3x3": {
+      "val": 1.0,
+      "move": [
+        "h",
+        0,
+        0
+      ],
+      "nodes": 440722,
+      "time": 1.3710808753967285
+    }
+  }
+}

@@ -17,3 +17,36 @@ env/
 .idea/
 .DS_Store
 Thumbs.db
+desktop.ini
+*.tmp
+~$*
+
+# LaTeX & Document Outputs
+*.tex
+*.pdf
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ilg
+*.ind
+
+# Lab 05 Report Logos & One-off Notebook Helper Scripts
+/01_Group-Labs/lab5 - game/img/logoITSGU.png
+/01_Group-Labs/lab5 - game/img/logoITSGUsmall.png
+/01_Group-Labs/lab5 - game/scripts/update_and_run_*.py
+/01_Group-Labs/lab5 - game/scripts/inspect_all_nbs.py
+/01_Group-Labs/lab5 - game/scripts/dump_nb_outputs.py
